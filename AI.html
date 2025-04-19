@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fragrance Fun Facts</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to right, #fef6f0, #fce8e4);
+      color: #4b3e36;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+      text-align: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #5a3d2b;
+    }
+
+    .fact-box {
+      background: white;
+      border: 2px solid #d9b8a6;
+      border-radius: 15px;
+      padding: 2rem;
+      max-width: 600px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .category {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #9d6b53;
+      margin-bottom: 1rem;
+    }
+
+    .fact {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: #c39879;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin: 1rem;
+    }
+
+    button:hover {
+      background-color: #a5785f;
+    }
+
+    a.back-link {
+      margin-top: 2rem;
+      display: inline-block;
+      color: #4b3e36;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>💐 Fragrance Fun Facts</h1>
+  <div class="fact-box">
+    <div class="category" id="category">Click the button below!</div>
+    <div class="fact" id="fact">Ready to learn something fragrance?</div>
+    <button onclick="showFact()">Show Me a Fun Fact</button>
+  </div>
+
+  <a href="fragrence.html" class="back-link">← Back to Fragrances Page</a>
+
+  <script>
+    const facts = [
+      {
+        category: "History",
+        text: "The first recorded use of perfume dates back to ancient Mesopotamia around 3,000 BC."
+      },
+      {
+        category: "History",
+        text: "Cleopatra was famous for her love of exotic fragrances and used scent to seduce both Julius Caesar and Mark Antony."
+      },
+      {
+        category: "Famous People",
+        text: "Coco Chanel revolutionized perfumery with Chanel No. 5, launched in 1921 — one of the first to use synthetic aldehydes."
+      },
+      {
+        category: "Famous People",
+        text: "Francis Kurkdjian, the nose behind Maison Francis Kurkdjian, also created the iconic Jean Paul Gaultier Le Male in his 20s."
+      },
+      {
+        category: "General",
+        text: "Your sense of smell is strongly tied to memory — more than any other sense!"
+      },
+      {
+        category: "General",
+        text: "The word 'perfume' comes from the Latin 'per fumum,' meaning 'through smoke.'"
+      },
+      {
+        category: "General",
+        text: "Some perfumes use ingredients like ambergris, which comes from the digestive system of whales!"
+      }
+    ];
+
+    function showFact() {
+      const random = facts[Math.floor(Math.random() * facts.length)];
+      document.getElementById('category').textContent = `Category: ${random.category}`;
+      document.getElementById('fact').textContent = random.text;
+    }
+  </script>
+</body>
+</html>

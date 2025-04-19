@@ -1,0 +1,91 @@
+/* Basic reset */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+/* Header styles */
+.header {
+  background-color: #e7d5c0;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 5px;
+}
+
+.nav-links {
+  margin: 10px 0;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #5a3e36;
+  font-family: 'Georgia', serif;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #996633;
+}
+
+/* On-page anchor link */
+.anchor-link {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #996633;
+  text-decoration: none;
+}
+
+.anchor-link:hover {
+  text-decoration: underline;
+}
+
+/* Intro block */
+.intro {
+  padding: 20px;
+  background-color: #fef6ee;
+  text-align: center;
+}
+
+/* Video section */
+.video-section {
+  padding: 20px;
+  background-color: #f0e3d4;
+  text-align: center;
+}
+
+/* Fragrance types list */
+.fragrance-types {
+  padding: 20px;
+  background-color: #fdf4ec;
+}
+
+/* Footer */
+.footer {
+  background-color: #e7d5c0;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* Headings and text */
+h1, h2 {
+  color: #5a3e36;
+}
+
+a {
+  color: #996633;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
